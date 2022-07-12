@@ -1,0 +1,12 @@
+<%- include("partials/header") -%>
+
+<h1> WELCOME TO YOUR BLOG APP</h1>
+
+<p><%=start %>  </p>
+
+
+<% postss.forEach(function(postthem) { %>
+ <h1> <%= postthem.title %></h1>
+ <p><%= postthem.post %>  </p>
+<% }) %>
+<%- include("partials/footer") -%>
